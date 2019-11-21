@@ -289,8 +289,21 @@ h3.weekstitle:before {
   }
 }
 
+@media screen and (min-width: 1000px) {
+  .mobile-show {
+    display: none;
+  }
+}
+
+.mobile-show {
+  padding: 100px 40px;
+}
+
 </style>
 <html>
+<div class="mobile-show">
+  <h1 class="explainer-title">This site is currently built for larger screens. A mobile version is coming soon.</h1>
+</div>
 <div class="mobile-hide">
 <div class="explainer">
   <div>
