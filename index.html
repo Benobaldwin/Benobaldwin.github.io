@@ -284,27 +284,35 @@ h3.weekstitle:before {
 }
 
 @media screen and (max-width: 1000px) {
-  .mobile-hide {
-    display: none;
+  .explainer {
+      grid-template-columns: 1fr;
+  }
+
+  .innerbreakdown {
+      grid-row: 2;
+  }
+
+  .contract {
+      grid-row: 1;
+  }
+
+  .breakdown {
+      grid-template-columns: 1fr;
+      grid-auto-flow: dense;
+      padding-bottom: 60px;
+      border-bottom: 1px solid lightgrey;
   }
 }
 
 @media screen and (min-width: 1000px) {
-  .mobile-show {
-    display: none;
-  }
+
 }
 
-.mobile-show {
-  padding: 100px 40px;
-}
+
 
 </style>
 <html>
-<div class="mobile-show">
-  <h1 class="explainer-title">This site is currently built for larger screens. A mobile version is coming soon.</h1>
-</div>
-<div class="mobile-hide">
+
 <div class="explainer">
   <div>
     <h1 class="explainer-title">What you're agreeing to when you sign the Success Sharing Agreement.</h1>
@@ -1270,5 +1278,5 @@ This does not replace the need to read the contract yourself, and perform your o
 </ul>
                                                           </div>
                                                         </div>
-</div>
+
 </html>
