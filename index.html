@@ -1,3 +1,295 @@
+<style>
+  /*! Typebase.less v0.1.0 | MIT License */
+
+  /* Setup */
+
+  html {
+    /* Change default typefaces here */
+    font-family: source serif pro;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Copy & Lists */
+
+  p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  ul,
+  ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul li,
+  ol li {
+    line-height: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul ul,
+  ol ul,
+  ul ol,
+  ol ol {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Headings */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* Change heading typefaces here */
+    font-family: source serif pro;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.2em;
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 2.828rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-size: 1.414rem;
+  }
+
+  h4 {
+    font-size: 0.707rem;
+  }
+
+  h5 {
+    font-size: 0.4713333333333333rem;
+  }
+
+  h6 {
+    font-size: 0.3535rem;
+  }
+
+  /* Tables */
+
+  table {
+    margin-top: 1.5rem;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 10px auto;
+  }
+
+  table td,
+  table th {
+    padding: 8px;
+    line-height: 1.2em;
+    text-align: left;
+  }
+
+  /* Code blocks */
+
+  code {
+    vertical-align: bottom;
+  }
+
+  /* Leading paragraph text */
+
+  .lead {
+    font-size: 1.414rem;
+  }
+
+  /* Hug the block above you */
+
+  .hug {
+    margin-top: 0;
+  }
+
+  .breakdown {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 30px;
+    grid-column-gap: 50px;
+  }
+
+
+
+  .innerbreakdown {
+    /* font-family: source sans pro !important; */
+  }
+
+  h3.takeaway {
+    font-family: source sans pro;
+    font-size: 16px;
+    color: #667;
+    margin-top: 1.5em;
+  }
+
+  p.takeawaydesc {
+    font-size: 22px;
+    line-height: 1.3em;
+    font-family: source sans pro;
+  }
+
+  .contract,
+  .contract * {
+    color: #667;
+  }
+
+  /* .breakdown:hover {
+    background: #192f43;
+    transition: all .3s;
+    color: white !important;
+  }
+  */
+
+
+  .breakdown:hover .contract,
+  .breakdown:hover .contract * {
+    color: #667;
+  }
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+
+  ol ol {
+    list-style-type: lower-roman;
+  }
+
+  ol ol ol {
+    list-style-type: upper-alpha;
+  }
+
+  .entiredoc:hover .breakdown {
+    opacity: .3;
+    transition: all .3s;
+}
+
+.entiredoc:hover  .breakdown:hover {
+    opacity: 1;
+    transition: all .3s;
+}
+
+.entiredoc {
+  transition: all .3s;
+  max-width: 1400px;
+}
+
+.explainer {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding: 150px 0px;
+    max-width: 1400px;
+    border-bottom: 1px solid black;
+}
+
+.explainer > div {
+    padding: 30px;
+}
+
+.explainer.explainer-2 {
+    padding: 75px 0px 75px 0px;
+    border-bottom: 0px;
+}
+
+.explainer-2 .explainer-title {
+    padding: 0px 30px;
+    margin-top: 0px;
+}
+
+h1.explainer-title {
+    font-size: 38px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.team-container img {
+    width: 160px;
+    padding: 20px;
+}
+
+.imagegrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+h3.teamtitle {
+    font-family: source sans pro;
+    padding-top:10px;
+}
+
+.imagegrid p {
+    font-family: source sans pro;
+}
+
+h3.weekstitle {
+    font-family: source sans pro;
+    font-family: source sans pro;
+    padding: 10px 0px 10px 30px;
+    margin-top: 0px;
+    position: relative;
+    border-left: 3px dashed #2fc197;
+}
+
+h3.weekstitle {}
+
+.weeksdesc {
+    font-family: source sans pro;
+    padding: 10px 0px 34px 30px;
+    margin-top: 0px;
+    border-left: 3px dashed #2fc197;
+}
+
+h3.weekstitle:before {
+    content: "\A";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: white;
+    display: block;
+    position: absolute;
+    border: 3px solid #2fc197;
+    left: -9.5px;
+    top: 15px;
+}
+
+.weeks {
+    position: relative;
+    padding: 70px 115px !important;
+    color: #667;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
+</style>
 <html>
 <div class="mobile-hide">
 <div class="explainer">
@@ -967,295 +1259,3 @@ This does not replace the need to read the contract yourself, and perform your o
                                                         </div>
 </div>
 </html>
-<style>
-  /*! Typebase.less v0.1.0 | MIT License */
-
-  /* Setup */
-
-  html {
-    /* Change default typefaces here */
-    font-family: source serif pro;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  /* Copy & Lists */
-
-  p {
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-  }
-
-  ul,
-  ol {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  ul li,
-  ol li {
-    line-height: 1.5rem;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
-  ul ul,
-  ol ul,
-  ul ol,
-  ol ol {
-    margin-top: 10px;
-    margin-bottom: 0;
-  }
-
-  blockquote {
-    line-height: 1.5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
-  }
-
-  /* Headings */
-
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    /* Change heading typefaces here */
-    font-family: source serif pro;
-    margin-top: 1.5rem;
-    margin-bottom: 0;
-    line-height: 1.5rem;
-  }
-
-  h1 {
-    font-size: 24px;
-    line-height: 1.2em;
-    margin-top: 3rem;
-  }
-
-  h2 {
-    font-size: 2.828rem;
-    line-height: 3rem;
-    margin-top: 3rem;
-  }
-
-  h3 {
-    font-size: 1.414rem;
-  }
-
-  h4 {
-    font-size: 0.707rem;
-  }
-
-  h5 {
-    font-size: 0.4713333333333333rem;
-  }
-
-  h6 {
-    font-size: 0.3535rem;
-  }
-
-  /* Tables */
-
-  table {
-    margin-top: 1.5rem;
-    border-spacing: 2px;
-    border-collapse: collapse;
-    font-size: 12px;
-    margin: 10px auto;
-  }
-
-  table td,
-  table th {
-    padding: 8px;
-    line-height: 1.2em;
-    text-align: left;
-  }
-
-  /* Code blocks */
-
-  code {
-    vertical-align: bottom;
-  }
-
-  /* Leading paragraph text */
-
-  .lead {
-    font-size: 1.414rem;
-  }
-
-  /* Hug the block above you */
-
-  .hug {
-    margin-top: 0;
-  }
-
-  .breakdown {
-    display: grid;
-    grid-template-columns: 2fr 3fr;
-    padding: 30px;
-    grid-column-gap: 50px;
-  }
-
-
-
-  .innerbreakdown {
-    /* font-family: source sans pro !important; */
-  }
-
-  h3.takeaway {
-    font-family: source sans pro;
-    font-size: 16px;
-    color: #667;
-    margin-top: 1.5em;
-  }
-
-  p.takeawaydesc {
-    font-size: 22px;
-    line-height: 1.3em;
-    font-family: source sans pro;
-  }
-
-  .contract,
-  .contract * {
-    color: #667;
-  }
-
-  /* .breakdown:hover {
-    background: #192f43;
-    transition: all .3s;
-    color: white !important;
-  }
-  */
-
-
-  .breakdown:hover .contract,
-  .breakdown:hover .contract * {
-    color: #667;
-  }
-
-  ol {
-    list-style-type: lower-alpha;
-  }
-
-  ol ol {
-    list-style-type: lower-roman;
-  }
-
-  ol ol ol {
-    list-style-type: upper-alpha;
-  }
-
-  .entiredoc:hover .breakdown {
-    opacity: .3;
-    transition: all .3s;
-}
-
-.entiredoc:hover  .breakdown:hover {
-    opacity: 1;
-    transition: all .3s;
-}
-
-.entiredoc {
-  transition: all .3s;
-  max-width: 1400px;
-}
-
-.explainer {
-    display: grid;
-    width: 80%;
-    margin: auto;
-    grid-template-columns: 1fr 1fr;
-    grid-column-gap: 30px;
-    padding: 150px 0px;
-    max-width: 1400px;
-    border-bottom: 1px solid black;
-}
-
-.explainer > div {
-    padding: 30px;
-}
-
-.explainer.explainer-2 {
-    padding: 75px 0px 75px 0px;
-    border-bottom: 0px;
-}
-
-.explainer-2 .explainer-title {
-    padding: 0px 30px;
-    margin-top: 0px;
-}
-
-h1.explainer-title {
-    font-size: 38px;
-}
-
-.team-container {
-    display: grid;
-    grid-template-columns: 1fr;
-}
-
-.team-container img {
-    width: 160px;
-    padding: 20px;
-}
-
-.imagegrid {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-}
-
-h3.teamtitle {
-    font-family: source sans pro;
-    padding-top:10px;
-}
-
-.imagegrid p {
-    font-family: source sans pro;
-}
-
-h3.weekstitle {
-    font-family: source sans pro;
-    font-family: source sans pro;
-    padding: 10px 0px 10px 30px;
-    margin-top: 0px;
-    position: relative;
-    border-left: 3px dashed #2fc197;
-}
-
-h3.weekstitle {}
-
-.weeksdesc {
-    font-family: source sans pro;
-    padding: 10px 0px 34px 30px;
-    margin-top: 0px;
-    border-left: 3px dashed #2fc197;
-}
-
-h3.weekstitle:before {
-    content: "\A";
-    width:10px;
-    height:10px;
-    border-radius:50%;
-    background: white;
-    display: block;
-    position: absolute;
-    border: 3px solid #2fc197;
-    left: -9.5px;
-    top: 15px;
-}
-
-.weeks {
-    position: relative;
-    padding: 70px 115px !important;
-    color: #667;
-}
-
-@media screen and (max-width: 1000px) {
-  .mobile-hide {
-    display: none; 
-  }
-}
-
-</style>
