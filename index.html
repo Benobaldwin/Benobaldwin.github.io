@@ -1,4 +1,5 @@
 <html>
+<div class="mobile-hide">
 <div class="explainer">
   <div>
     <h1 class="explainer-title">What you're agreeing to when you sign the Success Sharing Agreement.</h1>
@@ -387,7 +388,7 @@ This does not replace the need to read the contract yourself, and perform your o
                 THE TAKEAWAY
               </h3>
                               <p class="takeawaydesc">
-                                The agreement ends when you've made 24 payments, paid your Success Sharing Cap in full, satisfied the One-Year Career Commitment, or if 48 months have passed since the End of Immersion.
+                                The Payment Term ends when you've made 24 payments, paid your Success Sharing Cap in full, satisfied the One-Year Career Commitment, or if 48 months have passed since the End of Immersion.
                               </p>
                             </div>
                             <div class="contract">
@@ -964,7 +965,7 @@ This does not replace the need to read the contract yourself, and perform your o
 </ul>
                                                           </div>
                                                         </div>
-
+</div>
 </html>
 <style>
   /*! Typebase.less v0.1.0 | MIT License */
@@ -1249,6 +1250,12 @@ h3.weekstitle:before {
     position: relative;
     padding: 70px 115px !important;
     color: #667;
+}
+
+@media screen and (max-width: 1000px) {
+  .mobile-hide {
+    display: none; 
+  }
 }
 
 </style>
