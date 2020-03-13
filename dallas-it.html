@@ -1,0 +1,1282 @@
+<style>
+  /*! Typebase.less v0.1.0 | MIT License */
+
+  /* Setup */
+
+  html {
+    /* Change default typefaces here */
+    font-family: source serif pro;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* Copy & Lists */
+
+  p {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  ul,
+  ol {
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  ul li,
+  ol li {
+    line-height: 1.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  ul ul,
+  ol ul,
+  ul ol,
+  ol ol {
+    margin-top: 10px;
+    margin-bottom: 0;
+  }
+
+  blockquote {
+    line-height: 1.5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Headings */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    /* Change heading typefaces here */
+    font-family: source serif pro;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+    line-height: 1.5rem;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.2em;
+    margin-top: 3rem;
+  }
+
+  h2 {
+    font-size: 2.828rem;
+    line-height: 3rem;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    font-size: 1.414rem;
+  }
+
+  h4 {
+    font-size: 0.707rem;
+  }
+
+  h5 {
+    font-size: 0.4713333333333333rem;
+  }
+
+  h6 {
+    font-size: 0.3535rem;
+  }
+
+  /* Tables */
+
+  table {
+    margin-top: 1.5rem;
+    border-spacing: 2px;
+    border-collapse: collapse;
+    font-size: 12px;
+    margin: 10px auto;
+  }
+
+  table td,
+  table th {
+    padding: 8px;
+    line-height: 1.2em;
+    text-align: left;
+  }
+
+  /* Code blocks */
+
+  code {
+    vertical-align: bottom;
+  }
+
+  /* Leading paragraph text */
+
+  .lead {
+    font-size: 1.414rem;
+  }
+
+  /* Hug the block above you */
+
+  .hug {
+    margin-top: 0;
+  }
+
+  .breakdown {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    padding: 30px;
+    grid-column-gap: 50px;
+  }
+
+
+
+  .innerbreakdown {
+    /* font-family: source sans pro !important; */
+  }
+
+  h3.takeaway {
+    font-family: source sans pro;
+    font-size: 16px;
+    color: #667;
+    margin-top: 1.5em;
+  }
+
+  p.takeawaydesc {
+    font-size: 22px;
+    line-height: 1.3em;
+    font-family: source sans pro;
+  }
+
+  .contract,
+  .contract * {
+    color: #667;
+  }
+
+  /* .breakdown:hover {
+    background: #192f43;
+    transition: all .3s;
+    color: white !important;
+  }
+  */
+
+
+  .breakdown:hover .contract,
+  .breakdown:hover .contract * {
+    color: #667;
+  }
+
+  ol {
+    list-style-type: lower-alpha;
+  }
+
+  ol ol {
+    list-style-type: lower-roman;
+  }
+
+  ol ol ol {
+    list-style-type: upper-alpha;
+  }
+
+  .entiredoc:hover .breakdown {
+    opacity: .3;
+    transition: all .3s;
+}
+
+.entiredoc:hover  .breakdown:hover {
+    opacity: 1;
+    transition: all .3s;
+}
+
+.entiredoc {
+  transition: all .3s;
+  max-width: 1400px;
+}
+
+.explainer {
+    display: grid;
+    width: 80%;
+    margin: auto;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 30px;
+    padding: 150px 0px;
+    max-width: 1400px;
+    border-bottom: 1px solid black;
+}
+
+.explainer > div {
+    padding: 30px;
+}
+
+.explainer.explainer-2 {
+    padding: 75px 0px 75px 0px;
+    border-bottom: 0px;
+}
+
+.explainer-2 .explainer-title {
+    padding: 0px 30px;
+    margin-top: 0px;
+}
+
+h1.explainer-title {
+    font-size: 38px;
+}
+
+.team-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.team-container img {
+    width: 160px;
+    padding: 20px;
+}
+
+.imagegrid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+h3.teamtitle {
+    font-family: source sans pro;
+    padding-top:10px;
+}
+
+.imagegrid p {
+    font-family: source sans pro;
+}
+
+h3.weekstitle {
+    font-family: source sans pro;
+    font-family: source sans pro;
+    padding: 10px 0px 10px 30px;
+    margin-top: 0px;
+    position: relative;
+    border-left: 3px dashed #2fc197;
+}
+
+h3.weekstitle {}
+
+.weeksdesc {
+    font-family: source sans pro;
+    padding: 10px 0px 34px 30px;
+    margin-top: 0px;
+    border-left: 3px dashed #2fc197;
+}
+
+h3.weekstitle:before {
+    content: "\A";
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    background: white;
+    display: block;
+    position: absolute;
+    border: 3px solid #2fc197;
+    left: -9.5px;
+    top: 15px;
+}
+
+.weeks {
+    position: relative;
+    padding: 70px 115px !important;
+    color: #667;
+}
+
+@media screen and (max-width: 1000px) {
+  .explainer {
+      grid-template-columns: 1fr;
+  }
+
+  .innerbreakdown {
+      grid-row: 2;
+  }
+
+  .contract {
+      grid-row: 1;
+  }
+
+  .breakdown {
+      grid-template-columns: 1fr;
+      grid-auto-flow: dense;
+      padding-bottom: 60px;
+      border-bottom: 1px solid lightgrey;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+}
+
+
+
+</style>
+<html>
+
+<div class="explainer">
+  <div>
+    <h1 class="explainer-title">What you're agreeing to when you sign the Success Sharing Agreement.</h1>
+    <p class="explainer-desc">
+      Before continuing into the Immersion phase of the program, you are required to read, understand, and sign the Success Sharing Agreement. On the left, you'll find a simple, non-legally binding explanation of what the contract language means for you.
+    </p>
+  </div>
+  <div class="weeks">
+    <h3 class="weekstitle">Week 3</h3>
+    <p class="weeksdesc">Recieve the Success Sharing Agreement</p>
+    <h3 class="weekstitle">Week 5</h3>
+    <p class="weeksdesc">Sign the Success Sharing Agreement</p>
+
+  </div>
+</div>
+<div class="explainer explainer-2">
+      <h1 class="explainer-title" style="font-size: 32px; span: 2;">Your payments team:</h1>
+      <span></span>
+  <div class="team-container">
+    <div class="imagegrid">
+      <img src="elise-headshot.png">
+      <div>
+        <h3 class="teamtitle">
+          Elise Minkin
+        </h3>
+        <p>
+          Director of Strategy &amp; Partnerships
+        </p>
+      </div>
+    </div>
+  </div>
+    <div>
+  <div class="team-container">
+    <div class="imagegrid">
+      <img src="ben-headshot.png">
+      <div>
+        <h3 class="teamtitle">
+          Ben Ophoven-Baldwin
+        </h3>
+        <p>
+          Strategy Manager
+        </p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+<div style="width: 80%; max-width: 1400px; margin: auto; font-size: 24px; text-align: center; font-family: source sans pro; padding: 30px; color: white; background: #667;">
+The information provided does not, and is not intended to, constitute legal advice; instead, all information, content, and materials available on this site are for general informational purposes only.
+
+This does not replace the need to read the contract yourself, and perform your own due diligence.
+</div>
+
+
+<div class="entiredoc" style="width: 80%; margin: auto;">
+  <div style="margin-top: 75px;">
+    <div class="breakdown">
+      <div class="innerbreakdown">
+        <h3 class="takeaway">
+
+      </h3>
+        <p class="takeawaydesc">
+
+        </p>
+      </div>
+      <div class="contract">
+        <h1 style="margin-top: 1em;">MERIT AMERICA SUCCESS SHARING AGREEMENT</h1>
+      </div>
+    </div>
+    <div>
+      <div class="breakdown">
+        <div class="innerbreakdown">
+          <h3 class="takeaway">
+        </h3>
+          <p class="takeawaydesc">
+          </p>
+        </div>
+        <div class="contract">
+          <p>
+          This Merit America Success Sharing Agreement (“Agreement”) is made and effective as of: __________, (Date) (the “Effective Date”) by and between: __________________________________________, (hereinafter (Student Name) “Student”) with such Student’s current
+          physical address being:_________________________________; (Student’s Current Physical Address) and Merit America, a nonprofit corporation, having its principal place of business located at One Thomas Circle NW, Suite 700, Washington, DC, 20005
+          (hereinafter, “Merit America”). Student and Merit America may sometimes be referred to in this Agreement, individually, as a “Party”, and collectively as the “Parties”, as required by context.
+        </p>
+        </div>
+      </div>
+      <div>
+        <div class="breakdown">
+          <div class="innerbreakdown">
+            <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+            <p class="takeawaydesc">
+              This is a serious, legally binding a contract. You should read it carefully and conduct your own due diligence.
+            </p>
+            <p class="takeawaydesc">
+              This agreement is not a loan.
+            </p>
+            <p class="takeawaydesc">
+              We can’t guarantee your success.
+            </p>
+          </div>
+          <div class="contract">
+            <p><strong>
+              THIS IS A LEGAL CONTRACT. READ IT CAREFULLY BEFORE SIGNING. BY ENTERING INTO THIS AGREEMENT, STUDENT AGREES THAT, IN RETURN FOR PARTICIPATING IN THE PROGRAM OFFERED BY MERIT AMERICA, STUDENT WILL PAY THE TOTAL SUCCESS SHARING CAP DESIGNATED HEREIN TO MERIT AMERICA, SUBJECT TO THE TERMS AND CONDITIONS SET FORTH BELOW. THIS AGREEMENT DOES NOT CONSTITUTE A LOAN. STUDENT’S PAYMENT OBLIGATION IS CONTINGENT ON ITS EMPLOYMENT IN A QUALIFIED JOB, AS DESCRIBED IN THIS AGREEMENT. MERIT AMERICA DOES NOT GUARANTEE STUDENT’S SUCCESS IN FINDING A JOB OR STUDENT’S ACCEPTANCE INTO A QUALIFYING JOB OR ANY JOB.  STUDENT SHOULD CONSIDER SEEKING INDEPENDENT ADVICE ABOUT STUDENT’S EDUCATION FINANCING OPTIONS FROM A TRUSTED LEGAL, TAX, AND FINANCIAL ADVISOR BEFORE SIGNING THIS AGREEMENT. ________
+            </strong></p>
+          </div>
+        </div>
+        <div>
+          <div class="breakdown">
+            <div class="innerbreakdown">
+              <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+              <p class="takeawaydesc">
+                The Immersion phase is broken up into five two-week sections. These sections let us calculate the Success Sharing Cap based on how long you were in the program.
+              </p>
+            </div>
+            <div class="contract">
+              <p><strong>
+                  1. MERIT AMERICA’S PROGRAM
+              </strong></p>
+              <p>
+                The “Program” is the IT Support training program provided by Merit America to Student. The Program will operate according to the following schedule:
+              </p>
+              <table class="programdates">
+                <tr>
+                  <th class="tg-0lax">Phase</th>
+                  <th class="tg-0lax">Date Phase Begins</th>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Foundations</td>
+                  <td class="tg-0lax">November 4, 2019 (the “Program Start Date”)</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Immersion 1</td>
+                  <td class="tg-0lax">December 9, 2019</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Immersion 2</td>
+                  <td class="tg-0lax">December 23, 2019</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Immersion 3</td>
+                  <td class="tg-0lax">January 6, 2020</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Immersion 4</td>
+                  <td class="tg-0lax">January 20, 2020</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">Immersion 5</td>
+                  <td class="tg-0lax">February 3, 2020</td>
+                </tr>
+                <tr>
+                  <td class="tg-0lax">End of Immersion</td>
+                  <td class="tg-0lax">February 10, 2020 (the “Immersion End Date”)</td>
+                </tr>
+              </table>
+
+            </div>
+          </div>
+          <div>
+            <div class="breakdown">
+              <div class="innerbreakdown">
+                <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                <p class="takeawaydesc">
+                  At the start of Immersion, your payment cap is $1,000 and increases every two weeks until it reaches $2,900.
+                </p>
+              </div>
+              <div class="contract">
+                <p><strong>
+2. SUCCESS SHARING CAP PAYMENT TERMS.
+</strong></p>
+                <p>
+                  Student will pay Merit America the (i) Success Sharing Cap (as defined herein) and (ii) as applicable, the Stipend, designated in Section 2.a ((i) and (ii) collectively, the “Total Success Sharing Cap”), subject to the following terms:
+                </p>
+                <ol>
+                  <li><u>Success Sharing Cap</u>
+                    <ol>
+                      <li>Subject to Section 2.c.iii, in return for participation in the Program, Student will pay Merit America the amount designated in the table below (the “Success Sharing Cap”), depending on Student’s progress in the Program:
+                        <table class="paymentschedule">
+                          <tr>
+                            <th>Phase</th>
+                            <th>Course Week*</th>
+                            <th>Success Sharing Cap</th>
+                          </tr>
+                          <tr>
+                            <td>Foundations</td>
+                            <td>Program Start Date – Week 5</td>
+                            <td>$0</td>
+                          </tr>
+                          <tr>
+                            <td>Immersion 1</td>
+                            <td>Week 6 – Week 7</td>
+                            <td>$1,000</td>
+                          </tr>
+                          <tr>
+                            <td>Immersion 2</td>
+                            <td>Week 8 – Week 9</td>
+                            <td>$1,475</td>
+                          </tr>
+                          <tr>
+                            <td>Immersion 3</td>
+                            <td>Week 10 – Week 11</td>
+                            <td>$1,950</td>
+                          </tr>
+                          <tr>
+                            <td>Immersion 4</td>
+                            <td>Week 12 – Week 13</td>
+                            <td>$2,425</td>
+                          </tr>
+                          <tr>
+                            <td>Immersion 5</td>
+                            <td>Week 14 – Immersion End Date</td>
+                            <td>$2,900</td>
+                          </tr>
+                          <tr>
+                            <td colspan="3">* Weeks begin on Mondays at 6:00pm EST and end at 5:59 pm EST on the next Monday thereafter.</td>
+                          </tr>
+                        </table>
+                        Example: If Student exits from the Program at the end of Week 9, Student’s Success Sharing Cap is $1475.
+                      </li>
+
+              </div>
+            </div>
+            <div>
+              <div class="breakdown">
+                <div class="innerbreakdown">
+                  <h3 class="takeaway">
+                    THE TAKEAWAY
+      </h3>
+                  <p class="takeawaydesc">
+                    You can receive a stipend of $1,000 over the course of Immersion. There is an increase in your Success Sharing Cap directly tied to the amount you received.
+                  </p>
+                </div>
+                <div class="contract">
+                  <ol>
+                  <ol start="2">
+                    <li>
+                      <u>Stipend.</u> In addition to the Success Sharing Cap designated in Section 2.a.i, Students may receive financial support of up to $1000 from Merit America to assist Students to cover certain additional expenses in connection with participating in the Program
+                      (including, for example, childcare or transportation) (the “Stipend”). If a Student elects to receive a Stipend, and to the extent approved by Merit America, such Stipend will be paid to Student in the amount of $100 weekly, beginning
+                      in Week 6. Student will repay the Stipend as part of its Monthly Payments (as defined herein), depending on Student’s progress in the Program. As a result, to the extent Student elects (and Merit America agrees) to receive a Stipend,
+                      Student’s Success Sharing Cap will be increased as follows:
+                      <table class="stipendschedule">
+                        <tr>
+                          <th>Phase</th>
+                          <th>Course Week*</th>
+                          <th>Success Sharing Cap</th>
+                          <th>Additional Amt. Owed if <br>Receiving Stipend</th>
+                          <th>Total Success Sharing Cap</th>
+                        </tr>
+                        <tr>
+                          <td>Foundations</td>
+                          <td>Program Start Date – Week 5</td>
+                          <td>$0</td>
+                          <td>$0</td>
+                          <td>$0</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 1</td>
+                          <td>Week 6</td>
+                          <td>$1,000</td>
+                          <td>$200</td>
+                          <td>$1,200</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 1</td>
+                          <td>Week 7</td>
+                          <td>$1,000</td>
+                          <td>$300</td>
+                          <td>$1,300</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 2</td>
+                          <td>Week 8</td>
+                          <td>$1,475</td>
+                          <td>$400</td>
+                          <td>$1,875</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 2</td>
+                          <td>Week 9</td>
+                          <td>$1,475</td>
+                          <td>$500</td>
+                          <td>$1,975</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 3</td>
+                          <td>Week 10</td>
+                          <td>$1,950</td>
+                          <td>$600</td>
+                          <td>$2,550</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 3</td>
+                          <td>Week 11</td>
+                          <td>$1,950</td>
+                          <td>$700</td>
+                          <td>$2,650</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 4</td>
+                          <td>Week 12</td>
+                          <td>$2,425</td>
+                          <td>$800</td>
+                          <td>$3,225</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 4</td>
+                          <td>Week 13</td>
+                          <td>$2,425</td>
+                          <td>$900</td>
+                          <td>$3,325</td>
+                        </tr>
+                        <tr>
+                          <td>Immersion 5</td>
+                          <td>Week 14 –Immersion End Date</td>
+                          <td>$2,900</td>
+                          <td>$1,000</td>
+                          <td>$3,900</td>
+                        </tr>
+                        <tr>
+                          <td colspan="5">* Weeks begin on Mondays at 6:00pm EST and end at 5:59 pm EST on the next Monday thereafter.</td>
+                        </tr>
+                      </table>
+                      Example: If Student who has opted-in to the Stipend exits from the Program at the end of Week 9, that Student’s Total Success Sharing Cap is $1975.
+                    </li>
+                  </ol>
+                  </ol>
+                </div>
+              </div>
+              <div>
+                <div class="breakdown">
+                  <div class="innerbreakdown">
+                    <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                    <p class="takeawaydesc">
+                      Your Success Sharing Cap will be divided by 24 to determine your monthly payment.
+                    </p>
+                  </div>
+                  <div class="contract">
+                    <ol start="2">
+
+                    <li>
+                      Student will repay the Total Success Sharing Cap in monthly installments called the “Monthly Payment”. “Monthly Payment” means Student’s Total Success Sharing Cap, less any discounts or reductions, divided by twenty-four (24), due and payable in accordance
+                      with Section 2.c.
+                    </li>
+                    </ol>
+                  </div>
+                </div>
+
+                <div>
+                  <div class="breakdown">
+                    <div class="innerbreakdown">
+                      <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                      <p class="takeawaydesc">
+                        Two months after the program, you'll receive a notification for your first payment. You have thirty days to make a monthly payment, or to submit a deferral.
+                      </p>
+                      <p class="takeawaydesc">
+                        From this point on, payments and deferrals will be due on the same day each month.
+                      </p>
+                    </div>
+                    <div class="contract">
+                      <ol start="3">
+                      <li>
+                        <u>Payment Term.</u>
+                        <ol>
+                          <li>The “Payment Term” is the period during which Student shall make Monthly Payments pursuant to this Agreement. Notwithstanding anything to the contrary herein, unless a Student is in Deferral (as defined herein), Student’s Payment
+                            Term will begin two (2) months after the Immersion End Date. Merit America will provide Student with a notification of Student’s obligation to pay upon commencement of the Payment Term.</li>
+                          <li>Payment of the first Monthly Payment is due and payable within thirty (30) days after Student’s notification thereof, and every successive calendar month thereafter, until the Payment Term ends in accordance with 2.c.iii. </li>
+                        </ol>
+                      </li>
+                    </ol>
+                      </div>
+                    </div>
+
+                          <div class="breakdown">
+                            <div class="innerbreakdown">
+                              <h3 class="takeaway">
+                THE TAKEAWAY
+              </h3>
+                              <p class="takeawaydesc">
+                                The Payment Term ends when you've made 24 payments, paid your Success Sharing Cap in full, satisfied the One-Year Career Commitment, or if 48 months have passed since the End of Immersion.
+                              </p>
+                            </div>
+                            <div class="contract">
+                            <ol>
+                            <ol start="3">
+                          <li>The Payment Term (and Student’s obligation to make payments pursuant to this Agreement) will end upon the earliest to occur of the following:
+                            <ol>
+                              <li>Student has made a total of twenty-four (24) Monthly Payments to Merit America in accordance with this Agreement; </li>
+                              <li>Student pays off the Total Success Sharing Cap (plus any Late Fees, as applicable) owed pursuant to this Agreement;</li>
+                              <li>Subject to Student’s compliance with this Agreement, forty-eight (48) months have passed since the Immersion End Date; or</li>
+                              <li>Twelve (12) months have passed since the Immersion End Date and Student has met the requirements of Section 4 for the entire twelve (12) month period, as applicable (this circumstance, the “One-Year Career Commitment”).</li>
+                            </ol>
+                          </li>
+                        </ol>
+                      </li>
+                      </ol>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="breakdown">
+                      <div class="innerbreakdown">
+                        <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                        <p class="takeawaydesc">
+                          If you don't make a monthly payment or submit a deferral certification within 15 days of the due date, you'll be charged a late fee of 5% of your outstanding balance.
+                        </p>
+                      </div>
+                      <div class="contract">
+                        <ol start="4">
+                        <li>
+                          <u>Late Payment</u>. In addition to any Monthly Payments owed by Student, Student will pay an additional late fee if Student does not make its Monthly Payment within at least fifteen (15) days of the due date set forth in Section 2.c.ii or 2.e (e.g., with respect
+                          to rejected payments), or if Student fails to complete the the written certification to qualify for Deferral on time in accordance with Section 2.g (the “Late Fee”). Merit America will charge a Late Fee that is the lesser of (1) five percent (5%)
+                          of the total amount of the delinquent Monthly Payment (or if the Student has failed to complete the written certification to qualify for Deferral, five percent (5%) of the total amount of the Monthly Payment due during the period of Student’s
+                          missed written certification to qualify for Deferral), or (2) the amount permitted by applicable law. If Student is assessed a Late Fee for failure to complete the written certification to qualify for Deferral, the Late Fee is applied to Student’s Monthly Payment
+                          if, and when, they are no longer in Deferral, as applicable.
+                        </li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div>
+                      <div class="breakdown">
+                        <div class="innerbreakdown">
+                          <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                          <p class="takeawaydesc">
+                            You can make payments by credit card or check, or through automatic withdrawal. Monthly payments made through automatic withdrawal will be discounted by 10%.
+                          </p>
+                          <p class="takeawaydesc">
+                            If your payment fails, we may be charged a fee by our payment processor. If this happens, we'll pass this fee on to you.
+                          </p>
+                        </div>
+                        <div class="contract">
+                          <ol start="5">
+                          <li>
+                            <u>Methods of Payment</u>. Prior to, but no later than the commencement of, the Payment Term, Student will elect one of the following options for payment to Merit America of the Monthly Payment (plus Late Fees, as applicable):
+                            <ol>
+                              <li><u>Automatic Withdrawal</u>. Student may elect for Merit America to automatically deduct Student’s Monthly Payment (plus Late Fees, as applicable) from Student’s designated bank account on a monthly recurring basis (“Automatic Withdrawal”).
+                                Any Monthly Payment paid by Student with Automatic Withdrawal will be reduced by ten percent (10%). Student has the right at any time before or during the Payment Term, subject to giving Merit America at least three (3)
+                                business days’ written notice prior to a payment, to revoke Student’s prior authorization for Automatic Withdrawal. Should Student revoke authorization for Automatic Withdrawal, it shall not relieve Student of Student’s
+                                obligations to pay the Monthly Payment (plus Late Fees, as applicable) and Student shall elect an alternate method of payment provided in this Section 2.e. For the avoidance of doubt, if Student revokes authorization for
+                                Automatic Withdrawal, Student’s Monthly Payments will not be subject to the ten percent (10%) discount unless Student later re-enrolls in Automatic Withdrawal.</li>
+                              <li><u>Credit Card Payment</u>. Every month, Student may provide Merit America with a credit card number and execute an authorization for payment by credit card and such other documentation as may be required to authorize Merit America
+                                to charge the Monthly Payment (plus Late Fees, as applicable) to Student’s designated credit card.
+                              </li>
+                              <li><u>Check</u>. Every month, Student will provide Merit America with a check made out to Merit America in the amount due for the Monthly Payment (plus Late Fees, as applicable). Student will send the check via U.S. mail to the following
+                                address: One Thomas Circle NW, Suite 700, Washington, DC, 20005.
+                              </li>
+                            </ol>
+
+
+
+                            In the event that any payment made by Student is returned to Merit America due to insufficient funds or for any other reason, (a) Student shall pay to Merit America a returned payment charge (or an equivalent) in the amount that any bank or processor
+                            charges; and (b) Student shall resubmit their payment within fifteen (15) days of receiving notice of nonpayment from Merit America. Returned payments shall be deemed non-payment and Student shall also be subject to the Late
+                            Fees in accordance with Section 2.d above, as applicable.
+                            </li>
+                          </ol>
+                        </div>
+                      </div>
+
+                      <div>
+                        <div class="breakdown">
+                          <div class="innerbreakdown">
+                            <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                            <p class="takeawaydesc">
+                              You can prepay your full remaining Success Sharing Cap at anytime. You'll receive a 20% discount on the remaining cap in doing so.
+                            </p>
+                          </div>
+                          <div class="contract">
+                            <ol start="6">
+                            <li>
+                              <u>Prepayment</u>. Student may at any time prepay in full Student’s obligation to Merit America pursuant to this Agreement by paying the remaining Total Success Sharing Cap (plus applicable Late Fees or Stipends, and/or minus discounts). To the extent Student
+                              elects such prepayment, Student’s remaining Total Success Sharing Cap will be decreased by twenty percent (20%).
+
+                            </li>
+                            </ol>
+
+                          </div>
+                        </div>
+                        <div>
+                          <div class="breakdown">
+                            <div class="innerbreakdown">
+                              <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                              <p class="takeawaydesc">
+                                If you're not in a new job making $3,333.33 per month or more, you'll submit a deferral certification where you'll report your income. If you land a job making over $40k while you're in a deferral period, you're obligated to let us know and start making payments.
+                              </p>
+                            </div>
+                            <div class="contract">
+                              <ol start="7">
+                              <li>
+                                <u>Deferral</u>. If Student does not have a Qualifying Job at any time during the Payment Term, Student’s obligation to make Monthly Payments may be deferred for up to three (3) months from the date of Merit America’s receipt of Student’s written certification
+                                to Merit America that Student does not have a Qualifying Job (“Deferral”). To qualify for any subsequent Deferral(s), if applicable, Student shall complete another written certification to qualify for Deferral before the first Monthly Payment
+                                after the Deferral is due. For the avoidance of doubt, Student’s payment obligations to Merit America hereunder shall re-commence upon Student commencing or re-commencing a Qualified Job.
+
+                              </li>
+                              </ol>
+                            </div>
+                          </div>
+                          <div>
+                            <div class="breakdown">
+                              <div class="innerbreakdown">
+                                <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                <p class="takeawaydesc">
+                                  If you are not in a job that meets these requirements, you can submit for deferral. This "Qualifying Job" term is used throughout contract to explain deferrals and the One-Year Career Commitment.
+                                </p>
+                              </div>
+                              <div class="contract">
+                                <p><strong>
+  3. QUALIFYING JOBS
+</strong></p>
+                                <p>
+                                  A “Qualifying Job” is one that:
+                                </p>
+                                <ol>
+                                  <li>Has a monthly Income (as defined herein) of at least $3,333.33 per month ($40,000 per year), as verified by the Student through the Income Verification Process;
+                                  </li>
+                                  <li>Is not the same job, including the same responsibilities, as the job the Student had at the start of the Program. If the Student receives a raise or a new job title after participating in the Program, this is counted
+                                    as a different job; and
+                                  </li>
+                                  <li>Is not expressly limited to a temporary duration of six (6) months or less.
+                                  </li>
+                                </ol>
+
+                              </div>
+                            </div>
+                            <div>
+                              <div class="breakdown">
+                                <div class="innerbreakdown">
+                                  <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                  <p class="takeawaydesc">
+                                    If you complete these requirements and still don't land a Qualifying Job, your payment term ends.
+                                  </p>
+                                </div>
+                                <div class="contract">
+                                  <p><strong>
+  4. ONE-YEAR CAREER COMMITMENT
+</strong></p>
+                                  <p>To qualify for the One-Year Career Commitment, Student must:
+                                  </p>
+                                  <ol>
+                                    <li>Complete the Program on-time;</li>
+                                    <li>Complete all Placement requirements required by Merit America as provided on Merit America’s portal, including job application, coach meeting, and interview preparation requirements set forth by Merit America, where
+                                      “Placement” refers to a phase of the Program occurring immediately after the Immersion End Date;
+                                    </li>
+                                    <li>Complete the Income Verification Process on-time;
+                                    </li>
+                                    <li>Live within a one (1) hour commuting distance of the city in which Student completed the Program;
+                                    </li>
+                                    <li>Provide a written certification to Merit America that Student has not been offered a Qualifying Job in accordance with the terms of this Agreement;
+                                    </li>
+                                    <li>Complete the post-Program surveys, including the six-month and twelve-month post-Program surveys, as sent by Merit America to Student within two (2) weeks of receipt; and
+                                    </li>
+                                    <li>Reply to Merit America’s career coach, the Merit America team, or Merit America employer introductions related to potential job placement within five (5) business days.
+                                    </li>
+                                  </ol>
+                                </div>
+                              </div>
+                              <div>
+                                <div class="breakdown">
+                                  <div class="innerbreakdown">
+                                    <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                    <p class="takeawaydesc">
+                                      Before the start of the Payment Term, you're required to report your income. This process includes sharing your offer letter, pay stub, or other forms of documentation.
+                                    </p>
+                                  </div>
+                                  <div class="contract">
+                                    <p><strong>
+                                      5. INCOME VERIFICATION PROCESS
+                                    </strong></p>
+                                    <p>
+                                      The following describes the “Income Verification Process”, which includes both the initial verification and Reconciliation, as required:
+                                    </p>
+                                    <ol>
+                                      <li><u>Initial Verification</u>. At least thirty (30) days before Student’s first scheduled Monthly Payment is due in accordance with the terms of this Agreement, Student will communicate to Merit America (i) all employment
+                                        positions Student is offered and accepts, including, if requested, a description as to the business of each such employer and the nature of Student’s potential position with each employer, (ii) Student’s annual
+                                        gross salary for each employment position; (iii) Student’s projected annual gross income from all employers, including any income from self-employment; and (iv) any non-cash consideration, equity or deferred compensation
+                                        rights granted to Student in connection with Student’s employment, calculated on a pre-tax basis (items (ii), (iii), and (iv) collectively, are Student’s “Income”). In support of this communication, Student will
+                                        provide Merit America one of the following kinds of documentation, dated no earlier than thirty (30) days before the date Student provides it:
+                                        <ol>
+                                          <li>An offer letter, which includes starting salary and other details required to determine whether the position is a Qualifying Job;
+                                          </li>
+                                          <li>A copy of any pay stub or letter from Student’s employer containing Student’s salary information, a self-employment contract, a consulting agreement, a good faith estimate of Student’s self-employment Income for
+                                            the current calendar year (along with any documentation of the basis of Student’s estimate), or other verifiable source acceptable to Merit America (as communicated by Merit America to Student in writing) for
+                                            each source of Student’s Income; or
+                                          </li>
+                                          <li>Documentation acceptable to Merit America (as communicated by Merit America to Student in writing), demonstrating circumstances that qualify Student for Deferral.
+                                          </li>
+                                        </ol>
+                                      </li>
+
+                                  </div>
+                                </div>
+                                <div>
+                                  <div class="breakdown">
+                                    <div class="innerbreakdown">
+                                      <h3 class="takeaway">
+          THE TAKEAWAY
+        </h3>
+                                      <p class="takeawaydesc">
+                                        By the end of each year during your payment term, you have to let us know how your income changes. This is accomplished by giving us access to verifiable sources, including your tax returns.
+                                      </p>
+                                    </div>
+                                    <div class="contract">
+                                      <ol start="2">
+                                      <li>
+                                        <u>Reconciliation</u>. During the Payment Term, and for one (1) year thereafter, Student will update Merit America with any changes in Student’s Income or projected Income by December 31st each year of the Payment Term; or within thirty (30) days of any event
+                                        giving rise to the change (or anticipated change) in Student’s Income (such process the “Reconciliation”). Student’s Monthly Payment will be adjusted pursuant to such Reconciliation in accordance with Section 6.
+                                        Acceptable documentation for Reconciliation includes:
+                                        <ol>
+                                          <li>A completed and signed IRS Form 4506T or Form 4506T-EZ (or any successor form) designating Merit America as the recipient of Student’s tax return information for returns covering any and all months of the Payment
+                                            Term, dated not earlier than thirty (30) days before the date Student provides it to Merit America; and
+                                          </li>
+                                          <li>A year-end pay stub, Form W-2, Form 1099, Schedule K-1, or other verifiable source acceptable to Merit America (as communicated by Merit America to Student in writing) for each source of Income in the prior calendar
+                                            year.
+                                          </li>
+                                        </ol>
+                                      </li>
+                                      </ol>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <div class="breakdown">
+                                      <div class="innerbreakdown">
+                                        <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                        <p class="takeawaydesc">
+                                          If you underreport your income and that leads to a deferral, we'll notify you after the reconciliation process. You'll have 60 days to make up any missed payments.
+                                        </p>
+                                      </div>
+                                      <div class="contract">
+                                        <p><strong>
+  6. UNDERREPORTED INCOME
+</strong></p>
+                                        <p>
+                                          If at any time during the Payment Term, and whether intentionally or unintentionally, Student underreports or fails to report its Income (as determined by Merit America through Reconciliation), resulting in one or more Deferral(s), Merit America shall
+                                          give Student notice within ten (10) days of completion of the Reconciliation of the amount of the underpayment and reasonable documentation of the underpayment calculation. Student will pay Merit America any identified
+                                          deficiencies in Monthly Payment(s) within sixty (60) days of receiving notice of the underpayment.
+                                        </p>
+                                      </div>
+                                    </div>
+                                    <div>
+                                      <div class="breakdown">
+                                        <div class="innerbreakdown">
+                                          <h3 class="takeaway">
+                                          </h3>
+                                          <p class="takeawaydesc">
+                                          </p>
+                                        </div>
+                                        <div class="contract">
+                                          <p><strong>
+  7. COVENANTS AND REPRESENTATIONS OF STUDENT.
+</strong></p>
+                                          <p>
+                                            By entering into this Agreement, Student represents and warrants to Merit America as follows:
+                                          </p>
+                                          <ol>
+                                            <li>Student is entering into this Agreement in good faith and with the intention to repay Merit America by making Monthly Payments when due, subject to the terms of this Agreement;
+                                            </li>
+                                            <li>Student will timely and fully provide all information and documentation required under the terms of this Agreement, or as reasonably requested by Merit America, and that such information or documentation shall
+                                              be accurate and complete, and shall not contain false, misleading or deceptive statements or omissions of fact;
+                                            </li>
+                                            <li>Student has never been convicted of a felony or of any crime involving dishonesty or breach of trust under any federal or state law;
+                                            </li>
+                                            <li>Student is a U.S. citizen or permanent resident and/or has the legal right to work in the United States;
+                                            </li>
+                                            <li>Student will make reasonable and good faith efforts to seek employment (1) immediately following completion of the Program, and (2) during all times during the Payment Term that Student is not employed or that
+                                              Student does not have a Qualifying Job;
+                                            </li>
+                                            <li>Student will timely report to Merit America any changes in its employment status;
+                                            </li>
+                                            <li>
+                                              Student will not conceal, divert, defer or transfer any of Student’s Income (including but not limited to any non-cash consideration, equity or deferred compensation rights granted to Student) for the purpose of avoiding Student’s Monthly Payment obligation
+                                              or otherwise;
+                                            </li>
+                                            <li>
+                                              (1) Student will file all federal, state and local tax returns and reports as required by law, which shall be true and correct in all material respects, (2) Student will report all of its Income on such returns, and (3) Student shall pay all federal,
+                                              state or local taxes and other assessments when due;
+                                            </li>
+                                            <li>
+                                              Student shall keep accurate records relating to Student’s Income for each year of the Payment Term, including all W-2s (or similar tax forms such as 1099s), pay stubs, and any invoices or payments relating to self-employment services Student provides;
+                                            </li>
+                                            <li>Student will retain all records regarding Student’s Income for a period of at least one (1) year following the date Student fulfills all the payment obligations under this Agreement (or such other time period
+                                              as required by applicable law);
+                                            </li>
+                                            <li>
+                                              To the extent Student’s Income is reduced by another agreement or party, such reduction will not be considered when determining Student’s Income for the purposes of the Income Verification Process. Upon Merit America’s request, Student will provide Merit
+                                              America the appropriate documentation of such an agreement or reduction; and
+                                            </li>
+                                            <li>
+                                              Student does not have and will not enter into income share agreements or similar arrangements that obligate Student to make payments that reduce Student’s Income as reported through Student’s ongoing completion of the Income Verification Process. For
+                                              the avoidance of doubt, Student’s entering into such an arrangement will not affect Student’s obligations pursuant to this Agreement.
+                                            </li>
+                                          </ol>
+                                        </div>
+                                      </div>
+                                      <div>
+                                        <div class="breakdown">
+                                          <div class="innerbreakdown">
+                                            <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                            <p class="takeawaydesc">
+                                              If you don’t pay your monthly fee when you’re obligated to do so, and if you don’t talk to us to determine a solution, we can take legal action to obtain the full remaining Success Sharing Cap.
+                                            </p>
+                                            <p class="takeawaydesc">
+                                              We want to avoid this situation. If you’re in a qualifying job but are facing circumstances where you can’t pay, talk to us before ignoring us.
+                                            </p>
+                                          </div>
+                                          <div class="contract">
+                                            <p><strong>
+  8. BREACH AND REMEDIES
+</strong></p>
+                                            <ol>
+                                              <li><u>Breach</u>. Without prejudice to Merit America’s other rights and remedies hereunder, and subject to applicable law, Merit America may deem Student to be in breach under this Agreement upon any of: (i) Student’s
+                                                failure to make any payment that is due under this Agreement in accordance with the terms of this Agreement, in full and on time; (ii) Student’s failure to timely complete the Income Verification Process;
+                                                or (iii) Student’s violation of any other provision of this Agreement (each a “Breach”).
+                                              </li>
+                                              <li><u>Remedies upon Breach</u>. Upon Breach of this Agreement, Merit America will be entitled to (i) collect the Total Success Sharing Cap, less any Monthly Payments already received, and plus any outstanding fees or
+                                                other amounts Student may owe Merit America pursuant to the terms of this Agreement; (ii) enforce all legal rights and remedies in the collection of such amount and related fees (including, if and as applicable, any rights available to Merit America to garnish wages or set off any federal or state tax refund); or (iii) utilize any combination of these remedies.
+                                              </li>
+                                              <li><u>Equitable Remedies</u>. If Merit America concludes that money damages are not a sufficient remedy for any particular Breach of this Agreement, then Merit America will be entitled to seek an accounting, as well
+                                                as injunctive or other equitable relief for any such Breach to the fullest extent permitted by applicable law. Such remedy shall be in addition to all other remedies available to Merit America at law or
+                                                equity.
+                                              </li>
+                                              <li><u>Retained Rights</u>. No Breach or the termination of this Agreement will affect the validity of any of Student’s accrued obligations owing to Merit America under this Agreement. Notwithstanding any purported
+                                                breach or termination of this Agreement, Merit America shall retain all rights to enforce Student’s obligations under this Agreement in accordance with the terms hereof, including any right to receive
+                                                the full amount of Student’s Total Success Sharing Cap owed hereunder.
+                                              </li>
+                                            </ol>
+                                          </div>
+                                        </div>
+
+                                            <div>
+                                              <div class="breakdown">
+                                                <div class="innerbreakdown">
+                                                  <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                                  <p class="takeawaydesc">
+                                                    We collect personally identifiable information as needed. You're obligated to provide up-to-date information and to let us know if anything changes.
+                                                  </p>
+                                                </div>
+                                                <div class="contract">
+                                                  <p><strong>
+  9. CUSTOMER IDENTIFICATION POLICY
+</strong></p>
+                                                  <p>Merit America reserves the right to ask for information that identifies the person who enters into this Agreement, including but not limited to Student’s name, address, date of birth, Social Security number,
+                                                    marital status, and other information that Merit America determines in its discretion is necessary to effectuate the Agreement. Merit America may also ask to see Student’s driver’s license or other identifying
+                                                    documents. Student will notify Merit America if there are material changes to any of the information previously identified by Student as per this Section.
+                                                  </p>
+                                                </div>
+                                              </div>
+                                              <div>
+                                                <div class="breakdown">
+                                                  <div class="innerbreakdown">
+                                                    <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                                    <p class="takeawaydesc">
+                                                      We won't disclose any of the personally identifiable confidential information you share with us except as necessary to enforce this agreement or for research & evaluation purposes. By signing this agreement, you agree to let us use aggregrated, deidentified data to create or market new products or services without compensation.
+                                                    </p>
+                                                    <p class="takeawaydesc">
+                                                      Any information you learn about Merit America's business and/or program should be considered confidential.
+                                                    </p>
+                                                  </div>
+                                                  <div class="contract">
+                                                    <p><strong>
+  10. CONFIDENTIALITY
+</strong></p>
+                                                    <ol>
+                                                      <li>All employment or financial information of Student and any non-public records or information provided to Merit America by or on behalf of Student pursuant to this Agreement is confidential information.
+                                                        Merit America agrees not to knowingly (i) disclose, publish, cause to be disclosed or published, or (ii) use personal or financial information concerning Student or Student’s employer for any purposes
+                                                        other than (w) as expressly authorized herein, (x) for the purpose of Merit America’s research and evaluation, (y) as incidental to performance
+                                                        of this Agreement, including providing confidential information to any successor or assignee of this Agreement, or (z) to enforce its rights under this Agreement. Student authorizes Merit America
+                                                        to use any and all additional information provided by or on behalf of Student in connection with this Agreement, and any data derived from such information, to the extent it is aggregated and deidentified,
+                                                        including, without limitation, in connection with the creation and/or marketing of any products or services. Student disclaims any proprietary or monetary interest in any such additional products
+                                                        or services.
+                                                      </li>
+                                                      <li>Merit America may disclose or make available to Student information about its business affairs, services, third-party information and other sensitive or proprietary information, and this information,
+                                                        whether or not marked, designated or otherwise identified as such, is confidential information. Student agrees not to (i) disclose, publish, or cause to be disclosed or published, or (ii) use such
+                                                        information for any purposes other than as expressly authorized in writing by Merit America. Student disclaims any proprietary or monetary interest in any such information provided by or on behalf
+                                                        of Merit America.
+                                                      </li>
+                                                    </ol>
+                                                  </div>
+                                                </div>
+                                                <div>
+                                                  <div class="breakdown">
+                                                    <div class="innerbreakdown">
+                                                      <h3 class="takeaway">
+      </h3>
+                                                      <p class="takeawaydesc">
+                                                      </p>
+                                                    </div>
+                                                    <div class="contract">
+                                                      <p><strong>
+  11. LIMITATION OF LIABILITY
+</strong></p>
+                                                      <p>
+                                                        EXCEPT WITH RESPECT TO ANY DAMAGES OCCASIONED BY THE WILLFUL MISCONDUCT OF MERIT AMERICA, (A), MERIT AMERICA SHALL NOT BE LIABLE TO STUDENT FOR ANY LOSS OF EMPLOYMENT, LOST INCOME OR PROFITS, CONSEQUENTIAL, EXEMPLARY, INCIDENTAL, INDIRECT, OR SPECIAL
+                                                        DAMAGES, EVEN IF ADVISED BY STUDENT OF THE POSSIBILITY OF SUCH DAMAGES, AND (B) MERIT AMERICA’S TOTAL AGGREGATE LIABILITY HEREUNDER TO STUDENT FOR ANY AND ALL CLAIMS AND LOSSES RELATED TO OR ARISING
+                                                        OUT OF THE AGREEMENT WILL NOT EXCEED THE STUDENT’S TOTAL SUCCESS SHARING CAP.
+                                                      </p>
+                                                    </div>
+                                                  </div>
+                                                  <div>
+                                                    <div class="breakdown">
+                                                      <div class="innerbreakdown">
+                                                        <h3 class="takeaway">
+                                                          THE TAKEAWAY
+      </h3>
+                                                        <p class="takeawaydesc">
+                                                          If a student dies or becomes disabled, all payments are waived.
+                                                        </p>
+                                                      </div>
+                                                      <div class="contract">
+                                                        <p><strong>
+  12. WAIVER OF AGREEMENT DUE TO DEATH OR TOTAL AND DISABILITY
+</strong></p>
+                                                        <p>
+                                                          Merit America will waive any amount that Student owes under this Agreement, including any past due amounts and fees, if Student dies or becomes disabled. If Student (or Student’s next of kin) would like to assert a waiver based on death or disability,
+                                                          Student (or Student’s next of kin) will provide documentation showing that Student has (a) died, or (b) been found to be disabled by the Social Security Administration or other federal or state
+                                                          agency due to a condition that began or deteriorated after the date of signing this Agreement and that the disability is expected to be permanent.
+                                                        </p>
+                                                      </div>
+                                                    </div>
+                                                    <div>
+                                                      <div class="breakdown">
+                                                        <div class="innerbreakdown">
+                                                          <h3 class="takeaway">
+      </h3>
+                                                          <p class="takeawaydesc">
+                                                          </p>
+                                                        </div>
+                                                        <div class="contract">
+                                                          <p><strong>
+  13. SURVIVAL OF CERTAIN PROVISIONS
+</strong></p>
+                                                          <p>
+                                                            Notwithstanding anything to the contrary in this Agreement, the provisions of Sections 2 (Success Sharing Cap Payment Terms), 5 (Income Verification Process), 7 (Covenants and Representations of Student), 8 (Breach and Remedies), 10 (Confidentiality),
+                                                            11 (Limitation of Liability), 12 (Survival of Certain Provisions), 14 (Miscellaneous), and any other terms required to fulfill the essential purpose of the Agreement, shall survive termination
+                                                            or expiration of this Agreement.
+                                                          </p>
+                                                        </div>
+                                                      </div>
+                                                      <div>
+                                                        <div class="breakdown">
+                                                          <div class="innerbreakdown">
+                                                            <h3 class="takeaway">
+      </h3>
+                                                            <p class="takeawaydesc">
+                                                            </p>
+                                                          </div>
+                                                          <div class="contract">
+                                                            <p><strong>
+  14. MISCELLANEOUS
+</strong></p>
+                                                            <ol>
+                                                              <li><u>Entire Agreement</u>. This Agreement sets forth the entire agreement and understanding of the Parties relating to the subject matter hereof and supersedes all prior or contemporaneous discussions,
+                                                                understandings and agreements, whether oral or written, between Student and Merit America relating to the subject matter hereof.</li>
+                                                              <li><u>Amendments</u>. Except to the extent Merit America determines in its reasonable judgement that is required to amend this Agreement due to a change (or anticipated change) in applicable law, this
+                                                                Agreement may not be amended without the written consent of both Parties.
+                                                              </li>
+                                                              <li><u>No Waivers</u>. A failure or delay of either Party to insist on strict performance of any provision(s) herein will not be deemed a waiver of any rights or remedies of either Party and will not
+                                                                be deemed a waiver of any subsequent default(s) of the terms and conditions hereof.
+                                                              </li>
+                                                              <li><u>Successors and Assigns</u>. Merit America may subcontract its rights and obligations pursuant to this Agreement, and/or sell and/or assign this Agreement and/or any of Merit America’s rights, economic
+                                                                benefits, or obligations hereunder, to any other entity without Student’s permission or consent. Student may not assign this Agreement, whether voluntarily or by operation of law, or any
+                                                                of Student’s rights, economic benefits or obligations under this Agreement, except with Merit America’s prior written consent. Except as otherwise expressly provided in this Agreement, this
+                                                                Agreement, and the rights and obligations of the Parties hereunder, will be binding upon and inure to the benefit of their respective successors, assigns, and heirs.
+                                                              </li>
+                                                              <li><u>Severability</u>. If one or more provisions of this Agreement are held to be unenforceable under applicable law or by a court or government entity with competent jurisdiction, then (i) such provision
+                                                                shall be excluded from this Agreement to the minimum extent necessary so that this Agreement will otherwise remain in full force and effect, (ii) the balance of this Agreement shall be interpreted
+                                                                as if such provision were so excluded and (iii) the remainder of this Agreement shall be enforceable in accordance with its terms.
+                                                              </li>
+                                                              <li><u>Governing Law</u>. The validity, interpretation, construction and performance of this Agreement, and all acts and transactions pursuant to this Agreement and the rights and obligations of the Parties
+                                                                under this Agreement shall be governed by, construed, and interpreted in accordance with the laws of the District of Columbia, without giving effect to principles of conflicts of law. All
+                                                                actions related to this Agreement shall be brought in the appropriate state or federal court located in the District of Columbia. Subject to the terms of the Agreement, each Party is required
+                                                                and will continue performing its obligations under the Agreement while a dispute is being resolved unless and until such obligations are terminated by the termination or expiration of the
+                                                                Agreement.
+                                                              </li>
+                                                              <li><u>Notices</u>. Any notice, consent, demand or request required or permitted to be given under this Agreement shall be in writing and, shall be deemed sufficient (i) when sent by email from Student
+                                                                to Merit America, at success-sharing@meritamerica.org or to such other email address as Merit America may provide to Student from time to time; or to the following address: One Thomas Circle
+                                                                NW, Suite 700, Washington, DC, 20005, and (ii) when sent by Merit America to Student, at the email address or physical address Student last provided to Merit America.
+                                                              </li>
+                                                              <li><u>Execution</u>. Execution of this Agreement may be completed in counterparts (including both counterparts that are executed on paper and counterparts that are electronic records and executed electronically),
+                                                                which together shall constitute a single agreement. Any copy of this Agreement (including a copy printed from an image of this Agreement that has been stored electronically) shall have the
+                                                                same legal effect as an original.
+                                                              </li>
+                                                            </ol>
+                                                          </div>
+                                                        </div>
+                                                        <div>
+                                                          <div class="breakdown">
+                                                            <div class="innerbreakdown">
+                                                              <h3 class="takeaway">
+        THE TAKEAWAY
+      </h3>
+                                                              <p class="takeawaydesc">
+                                                                Sign and date here only if you completely agree to this contract.
+                                                              </p>
+                                                            </div>
+                                                            <div class="contract">
+                                                              <p><strong>IN WITNESS WHEREOF
+</strong>, the Parties have entered into this Agreement to be signed and delivered as of the Effective Date.</p>
+                                                              <table style="margin: 0px; width: 50%">
+                                                                <tr>
+                                                                  <th>Merit America</th>
+                                                                  <th>Student Name:</th>
+                                                                  <th></th>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>By:</td>
+                                                                  <td>By:</td>
+                                                                  <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>Name:</td>
+                                                                  <td>Date:</td>
+                                                                  <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>Title:</td>
+                                                                  <td></td>
+                                                                  <td></td>
+                                                                </tr>
+                                                                <tr>
+                                                                  <td>Date:</td>
+                                                                  <td></td>
+                                                                  <td></td>
+                                                                </tr>
+                                                              </table>
+                                                            </div>
+                                                          </div>
+                                                          <div style=" max-width: 1400px; margin: auto; margin-bottom: 200px; font-size: 24px; font-family: source sans pro; padding: 30px; color: white; background: #667;">
+
+                                                            The main actions you will have to take by entering into this agreement are:
+                                                            <ul>
+  <li>Submitting payment or certification for deferral in response to payment notifications</li>
+  <li>Submitting your income verification at year end</li>
+  <li>Communicating with Merit America via <a href="success-sharing@meritamerica.org" style="color: lightblue;">success-sharing@meritamerica.org</a> if you ever have any questions about the success sharing agreement</li>
+</ul>
+                                                          </div>
+                                                        </div>
+
+</html>
